@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Timetable</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .keynote {
+            background-color: #ffeb3b;
+        }
+        .workshop {
+            background-color: #4caf50;
+            color: white;
+        }
+        .panel-discussion {
+            background-color: #2196f3;
+            color: white;
+        }
+        .legend {
+            margin: 20px auto;
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        .legend p {
+            margin: 0;
+        }
+        .footer {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Conference Timetable</h1>
+
+    <table>
+        <caption><strong>2025 Annual Conference Timetable</strong></caption>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Room 1</th>
+                <th>Room 2</th>
+                <th>Room 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 9:00 AM - 10:30 AM -->
+            <tr>
+                <td>9:00 AM - 10:30 AM</td>
+                <td class="keynote" colspan="2" title="Speaker: Dr. John Smith | Topic: Future of AI">Keynote: Dr. Jineshwar S D</td>
+                <td class="workshop" rowspan="2" title="Speaker: Jane Doe | Topic: AI in Healthcare">Workshop: AI in Healthcare</td>
+            </tr>
+            <!-- 10:30 AM - 12:00 PM -->
+            <tr>
+                <td>10:30 AM - 12:00 PM</td>
+                <td class="panel-discussion" title="Panelists: Alice, Bob, Charlie | Topic: Tech Innovations">Panel: Tech Innovations</td>
+                <td></td>
+            </tr>
+            <!-- 12:00 PM - 1:30 PM -->
+            <tr>
+                <td>12:00 PM - 1:30 PM</td>
+                <td class="workshop" title="Speaker: Michael Lee | Topic: Machine Learning Fundamentals">Workshop: ML Fundamentals</td>
+                <td class="workshop" title="Speaker: Sarah Kim | Topic: Advanced Python for Data Science">Workshop: Python for Data Science</td>
+                <td></td>
+            </tr>
+            <!-- 1:30 PM - 3:00 PM -->
+            <tr>
+                <td>1:30 PM - 3:00 PM</td>
+                <td class="panel-discussion" title="Panelists: Emma, Lucas, Eve | Topic: Data Security">Panel: Data Security</td>
+                <td class="keynote" rowspan="2" title="Speaker: Dr. Alan Brown | Topic: The Future of Cloud Computing">Keynote: Dr. Jineshwar S D</td>
+            </tr>
+            <!-- 3:00 PM - 4:30 PM -->
+            <tr>
+                <td>3:00 PM - 4:30 PM</td>
+                <td class="workshop" title="Speaker: Mark T. | Topic: Deep Learning Techniques">Workshop: Deep Learning</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Legend for session types -->
+    <div class="legend">
+        <h3>Session Types Legend:</h3>
+        <p><span style="background-color: #ffeb3b; padding: 5px;">Keynote</span>: Keynote speeches from industry leaders</p>
+        <p><span style="background-color: #4caf50; color: white; padding: 5px;">Workshop</span>: Hands-on sessions with experts</p>
+        <p><span style="background-color: #2196f3; color: white; padding: 5px;">Panel Discussion</span>: Discussions on current trends and challenges</p>
+    </div>
+
+</body>
+</html>
