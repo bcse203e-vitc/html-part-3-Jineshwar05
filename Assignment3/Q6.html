@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Report</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .highlight {
+            background-color: #ffeb3b;
+            font-weight: bold;
+        }
+        .footer {
+            font-weight: bold;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sales Report</h1>
+
+    <table>
+        <caption><strong>Company Sales Report</strong></caption>
+        <thead>
+            <tr>
+                <th>Region</th>
+                <th>Salesperson</th>
+                <th>Product</th>
+                <th>Quantity Sold</th>
+                <th>Unit Price</th>
+                <th>Total Sales</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Sale 1 -->
+            <tr>
+                <td>North</td>
+                <td>John Doe</td>
+                <td>Product A</td>
+                <td>100</td>
+                <td>$50</td>
+                <td>$5000</td>
+            </tr>
+            <!-- Sale 2 -->
+            <tr>
+                <td>South</td>
+                <td>Jane Smith</td>
+                <td>Product B</td>
+                <td>150</td>
+                <td>$30</td>
+                <td>$4500</td>
+            </tr>
+            <!-- Sale 3 -->
+            <tr class="highlight">
+                <td>East</td>
+                <td>Emma Brown</td>
+                <td>Product C</td>
+                <td>200</td>
+                <td>$40</td>
+                <td>$8000</td>
+            </tr>
+            <!-- Sale 4 -->
+            <tr>
+                <td>West</td>
+                <td>Oliver Green</td>
+                <td>Product D</td>
+                <td>120</td>
+                <td>$60</td>
+                <td>$7200</td>
+            </tr>
+            <!-- Sale 5 -->
+            <tr>
+                <td>North</td>
+                <td>Ava Black</td>
+                <td>Product E</td>
+                <td>90</td>
+                <td>$55</td>
+                <td>$4950</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="footer">
+                <td colspan="5">Grand Total</td>
+                <td>$34,650</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
