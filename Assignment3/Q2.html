@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Organization Hierarchy</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption><strong>Company Organization Hierarchy</strong></caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Department Name</th>
+                <th rowspan="2">Manager</th>
+                <th rowspan="2">Number of Employees</th>
+                <th colspan="2">Budget</th>
+            </tr>
+            <tr>
+                <th>Amount</th>
+                <th>Percentage of Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- HR Department -->
+            <tr>
+                <td rowspan="2">HR</td>
+                <td>Jane Smith</td>
+                <td>15</td>
+                <td>$500,000</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>10</td>
+                <td>$350,000</td>
+                <td>7%</td>
+            </tr>
+
+            <!-- Engineering Department -->
+            <tr>
+                <td rowspan="3">Engineering</td>
+                <td>Sam Johnson</td>
+                <td>50</td>
+                <td>$2,000,000</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>Susan Lee</td>
+                <td>35</td>
+                <td>$1,400,000</td>
+                <td>28%</td>
+            </tr>
+            <tr>
+                <td>Peter Davis</td>
+                <td>20</td>
+                <td>$800,000</td>
+                <td>16%</td>
+            </tr>
+
+            <!-- Marketing Department -->
+            <tr>
+                <td rowspan="2">Marketing</td>
+                <td>Alice Brown</td>
+                <td>30</td>
+                <td>$1,000,000</td>
+                <td>20%</td>
+            </tr>
+            <tr>
+                <td>Bob White</td>
+                <td>20</td>
+                <td>$700,000</td>
+                <td>14%</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
