@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Report</title>
+    <style>
+        th {
+            background-color: #f2f2f2;
+        }
+        .highlight {
+            background-color: #ffeb3b;
+            font-weight: bold;
+        }
+        .top-student {
+            background-color: #c8e6c9;
+            font-weight: bold;
+        }
+        .bottom-student {
+            background-color: #ffcccb;
+        }
+        .footer {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Grade Report</h1>
+
+    <table border="1">
+        <caption><strong>Class Grade Report</strong></caption>
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Math</th>
+                <th>Science</th>
+                <th>English</th>
+                <th>Total Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Student 1 -->
+            <tr class="top-student">
+                <td>101</td>
+                <td>Jineshwar</td>
+                <td>95</td>
+                <td>90</td>
+                <td>88</td>
+                <td rowspan="2">273</td>
+            </tr>
+            <!-- Student 2 (same total marks as student 1) -->
+            <tr class="top-student">
+                <td>102</td>
+                <td>Jezer</td>
+                <td>90</td>
+                <td>95</td>
+                <td>88</td>
+            </tr>
+            <!-- Student 3 -->
+            <tr class="highlight">
+                <td>103</td>
+                <td>Parvesh</td>
+                <td>88</td>
+                <td>85</td>
+                <td>92</td>
+                <td>265</td>
+            </tr>
+            <!-- Student 4 -->
+            <tr>
+                <td>104</td>
+                <td>Kiran</td>
+                <td>78</td>
+                <td>80</td>
+                <td>85</td>
+                <td>243</td>
+            </tr>
+            <!-- Student 5 -->
+            <tr>
+                <td>105</td>
+                <td>William</td>
+                <td>65</td>
+                <td>70</td>
+                <td>60</td>
+                <td>195</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="footer">
+                <td colspan="2">Class Average</td>
+                <td>84.2</td>
+                <td>84.2</td>
+                <td>83.6</td>
+                <td>248.2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

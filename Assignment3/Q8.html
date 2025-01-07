@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Schedule</title>
+    <style>
+        th {
+            background-color: #f2f2f2;
+        }
+        .theoretical {
+            background-color: #ffeb3b;
+        }
+        .practical {
+            background-color: #4caf50;
+            color: white;
+        }
+        .footer {
+            font-weight: bold;
+            background-color: #f2f2f2;
+        }
+        .nested-table {
+            border: 0;
+        }
+        .nested-table td {
+            border: 1px solid #ddd;
+        }
+        .total-exams {
+            font-weight: bold;
+            background-color: #e3f2fd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exam Schedule</h1>
+
+    <table border="1">
+        <caption><strong>Exam Schedule for Semester 2025</strong></caption>
+        <thead>
+            <tr>
+                <th>Exam Date</th>
+                <th>9:00 AM - 12:00 PM</th>
+                <th>1:00 PM - 4:00 PM</th>
+                <th>4:30 PM - 7:00 PM</th>
+                <th>Total Exams</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Date 1 -->
+            <tr>
+                <td>May 1, 2025</td>
+                <td>
+                    <!-- Nested Table for 9:00 AM - 12:00 PM -->
+                    <table class="nested-table">
+                        <tr>
+                            <td class="theoretical" title="Theory Exam | Duration: 3 hours">Maths - 3h</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <!-- Nested Table for 1:00 PM - 4:00 PM -->
+                    <table class="nested-table">
+                        <tr>
+                            <td class="practical" title="Practical Exam | Duration: 3 hours">Chemistry - 3h</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <!-- Nested Table for 4:30 PM - 7:00 PM -->
+                    <table class="nested-table">
+                        <tr>
+                            <td class="theoretical" title="Theory Exam | Duration: 2 hours">Physics - 2h</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="total-exams">3 Exams</td>
+            </tr>
+
+            <!-- Date 2 -->
+            <tr>
+                <td>May 2, 2025</td>
+                <td>
+                    <!-- Nested Table for 9:00 AM - 12:00 PM -->
+                    <table class="nested-table">
+                        <tr>
+                            <td class="theoretical" title="Theory Exam | Duration: 3 hours">Biology - 3h</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <!-- Nested Table for 1:00 PM - 4:00 PM -->
+                    <table class="nested-table">
+                        <tr>
+                            <td class="practical" title="Practical Exam | Duration: 3 hours">Computer Science - 3h</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <!-- Nested Table for 4:30 PM - 7:00 PM -->
+                    <table class="nested-table">
+                        <tr>
+                            <td class="theoretical" title="Theory Exam | Duration: 2 hours">History - 2h</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="total-exams">3 Exams</td>
+            </tr>
+
+            <!-- Date 3 -->
+            <tr>
+                <td>May 3, 2025</td>
+                <td>
+                    <!-- Nested Table for 9:00 AM - 12:00 PM -->
+                    <table class="nested-table">
+                        <tr>
+                            <td class="practical" title="Practical Exam | Duration: 3 hours">Physics Lab - 3h</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <!-- Nested Table for 1:00 PM - 4:00 PM -->
+                    <table class="nested-table">
+                        <tr>
+                            <td class="practical" title="Practical Exam | Duration: 3 hours">Chemistry Lab - 3h</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <!-- Nested Table for 4:30 PM - 7:00 PM -->
+                    <table class="nested-table">
+                        <tr>
+                            <td class="theoretical" title="Theory Exam | Duration: 2 hours">Literature - 2h</td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="total-exams">3 Exams</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

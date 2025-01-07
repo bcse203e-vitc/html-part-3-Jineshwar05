@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports League Table</title>
+  <style>
+    th {
+      background-color: #f4f4f4;
+    }
+
+    /* Highlight top 3 teams */
+    .top-team {
+      font-weight: bold;
+      background-color: #e6f7ff;
+    }
+
+    /* Styling for footer row */
+    tfoot {
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
+
+    /* Optional styling for numerical columns */
+    colgroup .num-col {
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+  <table border="2">
+    <caption>Sports League Table</caption>
+
+    <!-- Column Grouping for numerical columns -->
+    <colgroup>
+      <col span="1" />
+      <col span="3" class="num-col" />
+      <col span="1" />
+    </colgroup>
+
+    <thead>
+      <tr>
+        <th scope="col">Team Name</th>
+        <th scope="col">Matches Played</th>
+        <th scope="col">Wins</th>
+        <th scope="col">Losses</th>
+        <th scope="col">Draws</th>
+        <th scope="col">Points</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <!-- Top 3 teams highlighted with 'top-team' class -->
+      <tr class="top-team">
+        <td>Team Jins</td>
+        <td>10</td>
+        <td>8</td>
+        <td>2</td>
+        <td>0</td>
+        <td>24</td>
+      </tr>
+      <tr class="top-team">
+        <td>Team Parvesh</td>
+        <td>10</td>
+        <td>7</td>
+        <td>3</td>
+        <td>0</td>
+        <td>21</td>
+      </tr>
+      <tr class="top-team">
+        <td>Team Jezer</td>
+        <td>10</td>
+        <td>6</td>
+        <td>4</td>
+        <td>0</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>Team Kiran</td>
+        <td>10</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>Team William</td>
+        <td>10</td>
+        <td>4</td>
+        <td>6</td>
+        <td>0</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>Team Sachin</td>
+        <td>10</td>
+        <td>3</td>
+        <td>7</td>
+        <td>0</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>Team Anirudh</td>
+        <td>10</td>
+        <td>2</td>
+        <td>8</td>
+        <td>0</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>Team Vittal</td>
+        <td>10</td>
+        <td>1</td>
+        <td>9</td>
+        <td>0</td>
+        <td>3</td>
+      </tr>
+    </tbody>
+
+    <!-- Footer Row showing total matches played -->
+    <tfoot>
+      <tr>
+        <td colspan="6" id="totalMatches" scope="row">Total Matches Played: 80</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>
